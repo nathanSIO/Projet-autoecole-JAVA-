@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <Events>
+    <EventHandler event="windowOpened" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowOpened"/>
+  </Events>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblElevePrenom" alignment="0" min="-2" pref="37" max="-2" attributes="0"/>
+                          <Component id="lblEleveDateDeNaissance" alignment="0" min="-2" pref="112" max="-2" attributes="0"/>
+                          <Component id="lblEleveAdresse" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                          <Component id="lblEleveMail" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                          <Component id="lblEleveNumeroTelephone" alignment="0" min="-2" pref="133" max="-2" attributes="0"/>
+                          <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblLogin" alignment="0" min="-2" pref="85" max="-2" attributes="0"/>
+                          <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblMdpConfirmer" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblEleveRue" min="-2" pref="147" max="-2" attributes="0"/>
+                          <Component id="lblEleveVille" alignment="0" min="-2" pref="37" max="-2" attributes="0"/>
+                          <Component id="lblEleveCodePostale" alignment="0" min="-2" pref="87" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace pref="36" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="txtEleveNom" max="32767" attributes="0"/>
+                      <Component id="txtElevePrenom" max="32767" attributes="0"/>
+                      <Component id="txtEleveInfoRue" alignment="0" max="32767" attributes="0"/>
+                      <Component id="txtEleveCodePostale" alignment="0" max="32767" attributes="0"/>
+                      <Component id="txtEleveVille" alignment="0" max="32767" attributes="0"/>
+                      <Component id="txtEleveNumeroTelephone" alignment="0" max="32767" attributes="0"/>
+                      <Component id="dcDateDeNaiss" max="32767" attributes="0"/>
+                      <Component id="txtLogin" alignment="0" pref="163" max="32767" attributes="0"/>
+                      <Component id="txtMdp" max="32767" attributes="0"/>
+                      <Component id="txtMdpConfirmer" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="cboSexe" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="175" max="-2" attributes="0"/>
+                      <Component id="lblEleveInscription" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="173" max="-2" attributes="0"/>
+                      <Component id="btnEleveInscription" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="lblEleveInscription" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblElevePrenom" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtEleveNom" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtElevePrenom" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="lblEleveDateDeNaissance" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="dcDateDeNaiss" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="lblEleveAdresse" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblEleveRue" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtEleveInfoRue" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblEleveCodePostale" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtEleveCodePostale" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblEleveVille" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtEleveVille" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblEleveNumeroTelephone" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtEleveNumeroTelephone" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="lblEleveMail" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="cboSexe" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblLogin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtLogin" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtMdp" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblMdpConfirmer" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtMdpConfirmer" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="btnEleveInscription" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lblEleveInscription">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="S&apos;inscrire"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblElevePrenom">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nom :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Pr&#xe9;nom :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEleveDateDeNaissance">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Date de naissance :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEleveAdresse">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Adresse :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEleveRue">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Num&#xe9;ro et nom de la rue :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEleveCodePostale">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Code postale :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEleveVille">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ville :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEleveNumeroTelephone">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Num&#xe9;ro de t&#xe9;l&#xe9;phone :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEleveMail">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sexe :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnEleveInscription">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="S&apos;inscrire"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnEleveInscriptionMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtEleveNom">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtElevePrenom">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtEleveInfoRue">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtEleveCodePostale">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtEleveVille">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtEleveNumeroTelephone">
+    </Component>
+    <Component class="com.toedter.calendar.JDateChooser" name="dcDateDeNaiss">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblLogin">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Votre login :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtLogin">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Votre mot de passe :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtMdp">
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cboSexe">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="2">
+            <StringItem index="0" value="Homme"/>
+            <StringItem index="1" value="Femme"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblMdpConfirmer">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Confirmer le mot de passe :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtMdpConfirmer">
+    </Component>
+  </SubComponents>
+</Form>

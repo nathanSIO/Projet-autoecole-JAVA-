@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <Events>
+    <EventHandler event="windowOpened" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowOpened"/>
+  </Events>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="lblMoniteurModifTitre" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblMoniteurModifNom" alignment="0" min="-2" pref="37" max="-2" attributes="0"/>
+                                  <Component id="lblMoniteurModifDateDeNaissance" alignment="0" min="-2" pref="112" max="-2" attributes="0"/>
+                                  <Component id="lblMoniteurModifAdresse" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                                  <Component id="lblMoniteurModifNumeroTelephone" alignment="0" min="-2" pref="133" max="-2" attributes="0"/>
+                                  <Component id="lblMoniteurModifPrenom" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblMoniteurModifRue" alignment="0" min="-2" pref="147" max="-2" attributes="0"/>
+                                  <Component id="lblMoniteurModifVille" alignment="0" min="-2" pref="37" max="-2" attributes="0"/>
+                                  <Component id="lblMoniteurModifCodePostale" alignment="0" min="-2" pref="87" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="49" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="txtMoniteurModifNom" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtMoniteurModifPrenom" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtMoniteurModifInfoRue" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtMoniteurModifCodePostale" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtMoniteurModifVille" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtMoniteurModifNumeroTelephone" alignment="0" max="32767" attributes="0"/>
+                          <Component id="dcMoniteurModifDateNaissance" alignment="0" pref="163" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <Component id="btnMoniteurModifInformations" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="129" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+              <Component id="lblMoniteurModifTitre" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblMoniteurModifNom" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtMoniteurModifNom" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblMoniteurModifPrenom" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtMoniteurModifPrenom" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="lblMoniteurModifDateDeNaissance" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="dcMoniteurModifDateNaissance" alignment="1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="lblMoniteurModifAdresse" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblMoniteurModifRue" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtMoniteurModifInfoRue" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblMoniteurModifCodePostale" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtMoniteurModifCodePostale" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblMoniteurModifVille" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtMoniteurModifVille" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblMoniteurModifNumeroTelephone" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtMoniteurModifNumeroTelephone" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="43" max="32767" attributes="0"/>
+              <Component id="btnMoniteurModifInformations" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JTextField" name="txtMoniteurModifVille">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblMoniteurModifRue">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Num&#xe9;ro et nom de la rue :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtMoniteurModifNumeroTelephone">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblMoniteurModifCodePostale">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Code postale :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblMoniteurModifVille">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ville :"/>
+      </Properties>
+    </Component>
+    <Component class="com.toedter.calendar.JDateChooser" name="dcMoniteurModifDateNaissance">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblMoniteurModifNumeroTelephone">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Num&#xe9;ro de t&#xe9;l&#xe9;phone :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnMoniteurModifInformations">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Modifier mes informations"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnMoniteurModifInformationsMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblMoniteurModifTitre">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Modifier mes informations personnelles "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtMoniteurModifNom">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblMoniteurModifNom">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nom :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtMoniteurModifPrenom">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblMoniteurModifPrenom">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Pr&#xe9;nom :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtMoniteurModifInfoRue">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblMoniteurModifDateDeNaissance">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Date de naissance :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtMoniteurModifCodePostale">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblMoniteurModifAdresse">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Adresse :"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

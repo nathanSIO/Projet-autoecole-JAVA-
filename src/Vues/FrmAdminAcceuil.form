@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <Events>
+    <EventHandler event="windowOpened" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowOpened"/>
+  </Events>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace pref="214" max="32767" attributes="0"/>
+                      <Component id="lblAdminNomConnexion" min="-2" pref="183" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="txtMoniteurNomConnexion" min="-2" pref="125" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="274" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="btnAdminLecon" alignment="0" pref="252" max="32767" attributes="0"/>
+                          <Component id="btnAdminAjouterCategorie" max="32767" attributes="0"/>
+                          <Component id="btnAdminPlanningEleve" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btnAdminMoniteurPlanning" alignment="0" pref="252" max="32767" attributes="0"/>
+                          <Component id="btnAdminModifCategorie" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btnAdminStatistiqueLecons" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="btnAdminAjouterVehicule" pref="198" max="32767" attributes="0"/>
+                          <Component id="btnAdminModiferVehicule" pref="198" max="32767" attributes="0"/>
+                          <Component id="btnAdminVoirCA" pref="198" max="32767" attributes="0"/>
+                          <Component id="btnAdminAjouterMoniteur" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btnAdminStatistiqueMoniteur" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
+              <Component id="lblAdminPlannings" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="lblAdminTitreVehicules" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="137" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="124" max="-2" attributes="0"/>
+              <Component id="lblAdminTitreCategories" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="lblAdminTitreAutre" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="157" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="lblTitreAdmin" min="-2" pref="318" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="234" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+              <Component id="lblTitreAdmin" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="lblAdminNomConnexion" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="txtMoniteurNomConnexion" min="-2" pref="30" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblAdminPlannings" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblAdminTitreVehicules" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnAdminAjouterVehicule" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnAdminLecon" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                      <Component id="btnAdminModiferVehicule" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="btnAdminPlanningEleve" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="btnAdminMoniteurPlanning" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="btnAdminStatistiqueLecons" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblAdminTitreCategories" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblAdminTitreAutre" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnAdminAjouterCategorie" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnAdminAjouterMoniteur" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btnAdminModifCategorie" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnAdminStatistiqueMoniteur" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="btnAdminVoirCA" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="129" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="btnAdminLecon">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Visualiser les le&#xe7;ons"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAdminLeconMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnAdminModiferVehicule">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Modifier un v&#xe9;hicule"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAdminModiferVehiculeMouseClicked"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="txtMoniteurNomConnexion">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="txtAdminConnecte">
+          <Properties>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Text Cursor"/>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="lblAdminNomConnexion">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Vous &#xea;tes connect&#xe9; en tant que  :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnAdminAjouterVehicule">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ajouter un v&#xe9;hicule"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAdminAjouterVehiculeMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTitreAdmin">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="14" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="ESPACE ADMIN"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblAdminPlannings">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Les Le&#xe7;ons :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnAdminPlanningEleve">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Visualiser le planning d&apos;un &#xe9;leve"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAdminPlanningEleveMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnAdminMoniteurPlanning">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Visualiser le planning d&apos;un moniteur"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAdminMoniteurPlanningMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblAdminTitreVehicules">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Les V&#xe9;hicules :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblAdminTitreCategories">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Les Cat&#xe9;gories : "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnAdminAjouterCategorie">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ajouter une cat&#xe9;gorie"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAdminAjouterCategorieMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnAdminModifCategorie">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Modifier une cat&#xe9;gorie"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAdminModifCategorieMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblAdminTitreAutre">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Autres : "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnAdminAjouterMoniteur">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ajouter un Moniteur"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAdminAjouterMoniteurMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnAdminVoirCA">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Voir le chiffre d&apos;affaire"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAdminVoirCAMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnAdminStatistiqueMoniteur">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Statistique V&#xe9;hicule/Moniteur"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAdminStatistiqueMoniteurMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnAdminStatistiqueLecons">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Statistique des le&#xe7;ons"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAdminStatistiqueLeconsMouseClicked"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>

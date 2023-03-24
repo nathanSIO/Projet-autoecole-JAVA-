@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblModifierModeleVehicule" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblModifierAnneeVehicule" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblAjoutCatVehicule" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="txtModifierModeleVehicule" alignment="0" pref="144" max="32767" attributes="0"/>
+                                  <Component id="ycModifierAnneeVehicule" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="cboModifierCatVehicule" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblModifierImmatriculation" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblModifierMarque" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="txtModifierMarque" pref="144" max="32767" attributes="0"/>
+                                  <Component id="cboModifierImmatriculation" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="122" max="-2" attributes="0"/>
+                              <Component id="lblAjoutVehicule" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="132" max="-2" attributes="0"/>
+                              <Component id="btnModifierVehicule" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <Component id="lblAjoutVehicule" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblModifierImmatriculation" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboModifierImmatriculation" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblModifierMarque" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtModifierMarque" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblModifierModeleVehicule" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtModifierModeleVehicule" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lblModifierAnneeVehicule" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="ycModifierAnneeVehicule" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lblAjoutCatVehicule" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="cboModifierCatVehicule" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+              <Component id="btnModifierVehicule" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="29" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JComboBox" name="cboModifierCatVehicule">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblAjoutCatVehicule">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="12" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="La cat&#xe9;gorie du v&#xe9;hicule :"/>
+      </Properties>
+    </Component>
+    <Component class="com.toedter.calendar.JYearChooser" name="ycModifierAnneeVehicule">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblModifierAnneeVehicule">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="12" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="L&apos;ann&#xe9;e du v&#xe9;hicule :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblModifierModeleVehicule">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="12" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Le mod&#xe8;le du v&#xe9;hicule : "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtModifierModeleVehicule">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtModifierMarque">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblModifierMarque">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="12" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="La marque du v&#xe9;hicule : "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblModifierImmatriculation">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="12" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Immatriculation du v&#xe9;hicule : "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblAjoutVehicule">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Modifier un v&#xe9;hicule"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnModifierVehicule">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Modifier le v&#xe9;hicule"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnModifierVehiculeMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cboModifierImmatriculation">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+  </SubComponents>
+</Form>

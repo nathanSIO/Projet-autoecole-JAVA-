@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <Events>
+    <EventHandler event="windowOpened" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowOpened"/>
+  </Events>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="26" max="32767" attributes="0"/>
+                      <Component id="lblEleveModifTitre" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblEleveModifNom" alignment="0" min="-2" pref="37" max="-2" attributes="0"/>
+                          <Component id="lblEleveModifDateDeNaissance" alignment="0" min="-2" pref="112" max="-2" attributes="0"/>
+                          <Component id="lblEleveModifAdresse" alignment="0" min="-2" pref="75" max="-2" attributes="0"/>
+                          <Component id="lblEleveModifNumeroTelephone" alignment="0" min="-2" pref="133" max="-2" attributes="0"/>
+                          <Component id="lblEleveModifPrenom" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblEleveModifRue" alignment="0" min="-2" pref="147" max="-2" attributes="0"/>
+                          <Component id="lblEleveModifCodePostale" alignment="0" min="-2" pref="87" max="-2" attributes="0"/>
+                          <Component id="lblEleveModifVille" min="-2" pref="37" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="txtEleveModifNom" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtEleveModifPrenom" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtEleveModifInfoRue" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtEleveModifCodePostale" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtEleveModifVille" alignment="0" max="32767" attributes="0"/>
+                          <Component id="txtEleveModifNumeroTelephone" alignment="0" max="32767" attributes="0"/>
+                          <Component id="dcEleveModifDateNaissance" alignment="0" pref="163" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="114" max="-2" attributes="0"/>
+              <Component id="btnEleveModifInformations" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+              <Component id="lblEleveModifTitre" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblEleveModifNom" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtEleveModifNom" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblEleveModifPrenom" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtEleveModifPrenom" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="lblEleveModifDateDeNaissance" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="dcEleveModifDateNaissance" alignment="1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="lblEleveModifAdresse" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblEleveModifRue" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtEleveModifInfoRue" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblEleveModifCodePostale" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtEleveModifCodePostale" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblEleveModifVille" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtEleveModifVille" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblEleveModifNumeroTelephone" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtEleveModifNumeroTelephone" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="btnEleveModifInformations" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="46" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="btnEleveModifInformations">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Modifier mes informations"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnEleveModifInformationsMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEleveModifTitre">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Modifier mes informations personnelles "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtEleveModifNom">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEleveModifNom">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nom :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtEleveModifPrenom">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEleveModifPrenom">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Pr&#xe9;nom :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtEleveModifInfoRue">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEleveModifDateDeNaissance">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Date de naissance :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtEleveModifVille">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEleveModifRue">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Num&#xe9;ro et nom de la rue :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtEleveModifNumeroTelephone">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEleveModifCodePostale">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Code postal :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEleveModifVille">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ville :"/>
+      </Properties>
+    </Component>
+    <Component class="com.toedter.calendar.JDateChooser" name="dcEleveModifDateNaissance">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtEleveModifCodePostale">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEleveModifNumeroTelephone">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Num&#xe9;ro de t&#xe9;l&#xe9;phone :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEleveModifAdresse">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Adresse :"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <Events>
+    <EventHandler event="windowOpened" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="formWindowOpened"/>
+  </Events>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" pref="149" max="-2" attributes="0"/>
+              <Component id="lblEleveTitre" min="-2" pref="93" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="lblEleveConnexion" min="-2" pref="161" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="118" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="btnEleveConnexion" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="157" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+              <Component id="btnEleveRetourConnexion" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="btnEleveSinscrire" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="lblEleveIdentifiant" max="32767" attributes="0"/>
+                  <Component id="lblEleveMotDePasse" pref="86" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace pref="55" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="txtEleveIdentifiant" pref="106" max="32767" attributes="0"/>
+                  <Component id="pfEleveMotDePasse" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+              <Component id="lblEleveTitre" min="-2" pref="24" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="lblEleveConnexion" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblEleveIdentifiant" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtEleveIdentifiant" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblEleveMotDePasse" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="pfEleveMotDePasse" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+              <Component id="btnEleveConnexion" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="34" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnEleveSinscrire" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnEleveRetourConnexion" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lblEleveTitre">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="LeRebours-auto"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEleveConnexion">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Connexion &#xe0; l&apos;espace &#xe9;l&#xe8;ve"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEleveIdentifiant">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Identifiant :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEleveMotDePasse">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Mot de passe :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtEleveIdentifiant">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnEleveConnexion">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Connexion"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEleveConnexionActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnEleveSinscrire">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="S&apos;inscrire "/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnEleveSinscrireMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnEleveRetourConnexion">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Retour"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnEleveRetourConnexionMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JPasswordField" name="pfEleveMotDePasse">
+    </Component>
+  </SubComponents>
+</Form>
