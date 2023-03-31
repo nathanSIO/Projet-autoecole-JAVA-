@@ -88,9 +88,9 @@ public class FrmAdminStatsLecons extends javax.swing.JFrame {
 
         lblNombreCategorie.setText("Le nombre de leçons pour cette catégorie est de :");
 
-        lblNombreVehicule.setText("Le nombre de fois que ce véhicule à été choisis est de :");
+        lblNombreVehicule.setText("Le nombre de fois que ce véhicule a été choisis est de :");
 
-        lblNombreLeconMoniteur.setText("Le nombre de fois que ce moniteur à été pris est de:");
+        lblNombreLeconMoniteur.setText("Le nombre de fois que ce moniteur a été pris est de :");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

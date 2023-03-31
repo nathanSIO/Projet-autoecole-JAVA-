@@ -10,7 +10,7 @@ package Entities;
  */
 public class Vehicule {
     private String Immatriculation,Marque,Modele;
-    private int Annee,CodeCategorie;
+    private int Annee,CodeCategorie,nbrLecons;
     
     public Vehicule(String uneImmatriculation,String uneMarque,String unModele,int Annee,int unCodeCategorie){
         this.Immatriculation=uneImmatriculation;
@@ -19,6 +19,16 @@ public class Vehicule {
         this.Annee=Annee;
         this.CodeCategorie=unCodeCategorie;
     }
+    
+    public Vehicule(String uneImmatriculation,int nbrLecons,String uneMarque,String unModele,int Annee,int unCodeCategorie){
+        this.Immatriculation=uneImmatriculation;
+        this.Marque=uneMarque;
+        this.Modele=unModele;
+        this.Annee=Annee;
+        this.CodeCategorie=unCodeCategorie;
+        this.nbrLecons = nbrLecons;
+    }
+
 
     /**
      * @return the Immatriculation
@@ -53,5 +63,8 @@ public class Vehicule {
      */
     public int getCodeCategorie() {
         return CodeCategorie;
+    }
+    public int getnbrLecons(){
+        return nbrLecons;
     }
 }

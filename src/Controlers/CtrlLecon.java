@@ -171,7 +171,7 @@ public class CtrlLecon {
         ArrayList<Lecon> lesLecons = new ArrayList<>();
         
         try {
-            ps= maCnx.prepareStatement("SELECT CodeLecon, Date, Heure, CodeMoniteur, CodeEleve, Immatriculation, Reglee FROM lecon;");
+            ps= maCnx.prepareStatement("SELECT CodeLecon, Date, Heure, CodeMoniteur, CodeEleve, Immatriculation, Reglee FROM lecon Order BY Date DESC;");
             rs= ps.executeQuery();
             while(rs.next()){
                 Lecon lecon= new Lecon(rs.getInt(1),rs.getDate(2),rs.getString(3),rs.getInt(4),rs.getInt (5),rs.getString(6),rs.getInt(7));

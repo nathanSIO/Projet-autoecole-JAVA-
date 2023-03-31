@@ -59,21 +59,17 @@ public class FrmEleveGraphique extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 737, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(32, 32, 32)
-                    .addComponent(pnlGraphMonitteur1, javax.swing.GroupLayout.PREFERRED_SIZE, 645, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(60, Short.MAX_VALUE)))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(29, Short.MAX_VALUE)
+                .addComponent(pnlGraphMonitteur1, javax.swing.GroupLayout.PREFERRED_SIZE, 605, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(22, 22, 22))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 529, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(49, 49, 49)
-                    .addComponent(pnlGraphMonitteur1, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(59, Short.MAX_VALUE)))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(49, 49, 49)
+                .addComponent(pnlGraphMonitteur1, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(66, Short.MAX_VALUE))
         );
 
         pack();
@@ -91,7 +87,6 @@ public class FrmEleveGraphique extends javax.swing.JFrame {
         for (String valeur : ctrlGraphique.GetDatasGraphiqueEleveLecon(eleve.getNumEleve()).keySet())
         {
             nombreDeLecon = ctrlGraphique.GetDatasGraphiqueEleveLecon(eleve.getNumEleve()).get(valeur);
-            
             switch (valeur) {
                 case "1": 
                     mois = "Janvier";
@@ -136,9 +131,9 @@ public class FrmEleveGraphique extends javax.swing.JFrame {
             donnees.setValue(nombreDeLecon,"",mois);
         }
         JFreeChart chart1 = ChartFactory.createBarChart(
-                "Nombre de leçon par mois durant l'année",
+                "Nombre de leçons par mois durant l'année",
                 "Mois",
-                "Nombre de Leçon",
+                "Nombre de Leçons",
                 donnees,
                 PlotOrientation.VERTICAL,false, true, false);
         ChartPanel graph = new ChartPanel(chart1);

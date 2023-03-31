@@ -191,12 +191,12 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblNombreVehicule">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Le nombre de fois que ce v&#xe9;hicule &#xe0; &#xe9;t&#xe9; choisis est de :"/>
+        <Property name="text" type="java.lang.String" value="Le nombre de fois que ce v&#xe9;hicule a &#xe9;t&#xe9; choisis est de :"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lblNombreLeconMoniteur">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Le nombre de fois que ce moniteur &#xe0; &#xe9;t&#xe9; pris est de:"/>
+        <Property name="text" type="java.lang.String" value="Le nombre de fois que ce moniteur a &#xe9;t&#xe9; pris est de :"/>
       </Properties>
     </Component>
   </SubComponents>

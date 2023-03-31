@@ -58,6 +58,9 @@ public class FrmMoniteurModifierInformation extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                formWindowClosing(evt);
+            }
             public void windowOpened(java.awt.event.WindowEvent evt) {
                 formWindowOpened(evt);
             }
@@ -204,6 +207,9 @@ public class FrmMoniteurModifierInformation extends javax.swing.JFrame {
           
           ctrlMoniteur.modifierMoniteur(unMoniteur.getCodeMoniteur(),txtMoniteurModifNom.getText(), txtMoniteurModifPrenom.getText(), dateNaiss, txtMoniteurModifInfoRue.getText(), Integer.parseInt(txtMoniteurModifCodePostale.getText()) , txtMoniteurModifVille.getText(), txtMoniteurModifNumeroTelephone.getText());
           JOptionPane.showMessageDialog(this, "Votre modification est faite");
+          unMoniteur = ctrlMoniteur.getMoniteurById(unMoniteur.getCodeMoniteur());
+          FrmMoniteurAcceuil frm = new FrmMoniteurAcceuil(unMoniteur);
+          
         }
     }//GEN-LAST:event_btnMoniteurModifInformationsMouseClicked
 
@@ -218,6 +224,12 @@ public class FrmMoniteurModifierInformation extends javax.swing.JFrame {
         txtMoniteurModifNumeroTelephone.setText(unMoniteur.getTelephone());
         txtMoniteurModifVille.setText(unMoniteur.getVille());
     }//GEN-LAST:event_formWindowOpened
+
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+        // TODO add your handling code here:
+        FrmMoniteurAcceuil frm = new FrmMoniteurAcceuil(unMoniteur);
+        frm.setVisible(true);
+    }//GEN-LAST:event_formWindowClosing
 
     /**
      * @param args the command line arguments

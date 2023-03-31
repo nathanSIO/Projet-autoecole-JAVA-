@@ -4,12 +4,20 @@
  */
 package Vues;
 
+import Controlers.CtrlCategorie;
+import Controlers.CtrlVehicule;
+import Entities.Categorie;
+import Entities.Vehicule;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Rakotomalala Cédric
  */
 public class FrmAdminModifierVehicule extends javax.swing.JFrame {
 
+    CtrlVehicule ctrlVehicule;
+    CtrlCategorie ctrlCategorie;
     /**
      * Creates new form FrmAdminAjoutVehicule1
      */
@@ -39,6 +47,12 @@ public class FrmAdminModifierVehicule extends javax.swing.JFrame {
         btnModifierVehicule = new javax.swing.JButton();
         cboModifierImmatriculation = new javax.swing.JComboBox<>();
 
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
+
         lblAjoutCatVehicule.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblAjoutCatVehicule.setText("La catégorie du véhicule :");
 
@@ -61,6 +75,12 @@ public class FrmAdminModifierVehicule extends javax.swing.JFrame {
         btnModifierVehicule.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnModifierVehiculeMouseClicked(evt);
+            }
+        });
+
+        cboModifierImmatriculation.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                cboModifierImmatriculationItemStateChanged(evt);
             }
         });
 
@@ -137,8 +157,43 @@ public class FrmAdminModifierVehicule extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnModifierVehiculeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnModifierVehiculeMouseClicked
-        // TODO add your handling code here:
+        if (txtModifierMarque.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Le champ marque ne peut pas être vide !","Modification d'un véhicule",JOptionPane.WARNING_MESSAGE);
+        } else if (txtModifierModeleVehicule.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Le champ modèle ne peut pas être vide !","Modification d'un véhicule",JOptionPane.WARNING_MESSAGE);
+        } else {
+            Vehicule vehicule = new Vehicule(cboModifierImmatriculation.getSelectedItem().toString(), txtModifierMarque.getText(), txtModifierModeleVehicule.getText(), ycModifierAnneeVehicule.getYear(), ctrlCategorie.getIdCategorie(cboModifierCatVehicule.getSelectedItem().toString()));
+            ctrlVehicule.editVehicule(vehicule);
+            JOptionPane.showMessageDialog(this, "Modification du véhicule a été prise en compte");
+        }
     }//GEN-LAST:event_btnModifierVehiculeMouseClicked
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        ctrlVehicule = new CtrlVehicule();
+        ctrlCategorie = new CtrlCategorie();
+        
+        for (Vehicule vehicule : ctrlVehicule.getAllVehicule()) {
+            cboModifierImmatriculation.addItem(vehicule.getImmatriculation());
+        }
+        
+        for (Categorie categorie : ctrlCategorie.getAllCategorie()) {
+            cboModifierCatVehicule.addItem(categorie.getLibelle());
+        }
+    }//GEN-LAST:event_formWindowOpened
+
+    private void cboModifierImmatriculationItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cboModifierImmatriculationItemStateChanged
+        Vehicule vehicule = ctrlVehicule.getVehicule(cboModifierImmatriculation.getSelectedItem().toString());
+        
+        txtModifierMarque.setText(vehicule.getMarque());
+        txtModifierModeleVehicule.setText(vehicule.getModele());
+        ycModifierAnneeVehicule.setYear(vehicule.getAnnee());
+        
+        for (int i = 0; i < cboModifierCatVehicule.getItemCount(); i++) {
+            if (cboModifierCatVehicule.getItemAt(i).equals(ctrlCategorie.getCategorie(vehicule.getCodeCategorie()).getLibelle())) {
+                cboModifierCatVehicule.setSelectedIndex(i);
+            }
+        }
+    }//GEN-LAST:event_cboModifierImmatriculationItemStateChanged
 
     /**
      * @param args the command line arguments

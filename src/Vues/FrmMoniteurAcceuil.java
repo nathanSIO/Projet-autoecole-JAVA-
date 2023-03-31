@@ -178,6 +178,7 @@ public class FrmMoniteurAcceuil extends javax.swing.JFrame {
         // TODO add your handling code here:
         FrmMoniteurModifierInformation frm = new FrmMoniteurModifierInformation(unMoniteur);
         frm.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_btnMoniteurModifierInformationMouseClicked
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened

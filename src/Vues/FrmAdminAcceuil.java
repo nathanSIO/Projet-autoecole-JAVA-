@@ -94,7 +94,7 @@ public class FrmAdminAcceuil extends javax.swing.JFrame {
         lblAdminPlannings.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lblAdminPlannings.setText("Les Leçons :");
 
-        btnAdminPlanningEleve.setText("Visualiser le planning d'un éleve");
+        btnAdminPlanningEleve.setText("Visualiser le planning d'un élève");
         btnAdminPlanningEleve.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnAdminPlanningEleveMouseClicked(evt);
@@ -138,21 +138,22 @@ public class FrmAdminAcceuil extends javax.swing.JFrame {
             }
         });
 
-        btnAdminVoirCA.setText("Voir le chiffre d'affaire");
+        btnAdminVoirCA.setText("Voir le chiffre d'affaires");
+        btnAdminVoirCA.setToolTipText("");
         btnAdminVoirCA.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnAdminVoirCAMouseClicked(evt);
             }
         });
 
-        btnAdminStatistiqueMoniteur.setText("Statistique Véhicule/Moniteur");
+        btnAdminStatistiqueMoniteur.setText("Statistiques Véhicule/Moniteur");
         btnAdminStatistiqueMoniteur.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnAdminStatistiqueMoniteurMouseClicked(evt);
             }
         });
 
-        btnAdminStatistiqueLecons.setText("Statistique des leçons");
+        btnAdminStatistiqueLecons.setText("Statistiques des leçons");
         btnAdminStatistiqueLecons.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnAdminStatistiqueLeconsMouseClicked(evt);
@@ -196,7 +197,7 @@ public class FrmAdminAcceuil extends javax.swing.JFrame {
                 .addComponent(lblAdminTitreVehicules)
                 .addGap(137, 137, 137))
             .addGroup(layout.createSequentialGroup()
-                .addGap(124, 124, 124)
+                .addGap(111, 111, 111)
                 .addComponent(lblAdminTitreCategories)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(lblAdminTitreAutre)
@@ -320,7 +321,7 @@ public class FrmAdminAcceuil extends javax.swing.JFrame {
 
     private void btnAdminStatistiqueMoniteurMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdminStatistiqueMoniteurMouseClicked
         // TODO add your handling code here:
-        FrmAdminStatsMoniteurEtVehicule frm = new FrmAdminStatsMoniteurEtVehicule();
+        FrmAdminStatistiqueMoniteurEtVehicule frm = new FrmAdminStatistiqueMoniteurEtVehicule();
         frm.setVisible(true);
     }//GEN-LAST:event_btnAdminStatistiqueMoniteurMouseClicked
 

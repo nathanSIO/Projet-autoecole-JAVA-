@@ -66,7 +66,7 @@
               <EmptySpace min="-2" pref="137" max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="124" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
               <Component id="lblAdminTitreCategories" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
               <Component id="lblAdminTitreAutre" min="-2" max="-2" attributes="0"/>
@@ -206,7 +206,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnAdminPlanningEleve">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Visualiser le planning d&apos;un &#xe9;leve"/>
+        <Property name="text" type="java.lang.String" value="Visualiser le planning d&apos;un &#xe9;l&#xe8;ve"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAdminPlanningEleveMouseClicked"/>
@@ -270,7 +270,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnAdminVoirCA">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Voir le chiffre d&apos;affaire"/>
+        <Property name="text" type="java.lang.String" value="Voir le chiffre d&apos;affaires"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAdminVoirCAMouseClicked"/>
@@ -278,7 +279,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnAdminStatistiqueMoniteur">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Statistique V&#xe9;hicule/Moniteur"/>
+        <Property name="text" type="java.lang.String" value="Statistiques V&#xe9;hicule/Moniteur"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAdminStatistiqueMoniteurMouseClicked"/>
@@ -286,7 +287,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnAdminStatistiqueLecons">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Statistique des le&#xe7;ons"/>
+        <Property name="text" type="java.lang.String" value="Statistiques des le&#xe7;ons"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAdminStatistiqueLeconsMouseClicked"/>

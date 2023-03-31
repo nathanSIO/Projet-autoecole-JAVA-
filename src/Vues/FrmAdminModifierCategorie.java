@@ -133,7 +133,7 @@ public class FrmAdminModifierCategorie extends javax.swing.JFrame {
 
     private void btnAdminAjoutCatégorieMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdminAjoutCatégorieMouseClicked
         ctrlCategorie.editCategorie(cboAdminNomCategorie.getSelectedItem().toString(), txtAdminNomCategorie.getText(), Double.valueOf(txtAdminPrixCategorie.getText()));
-        JOptionPane.showMessageDialog(this, "Modification de la catégorie a été prise en compte");
+        JOptionPane.showMessageDialog(this, "La modification de la catégorie a été prise en compte");
     }//GEN-LAST:event_btnAdminAjoutCatégorieMouseClicked
 
     private void cboAdminNomCategorieItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cboAdminNomCategorieItemStateChanged

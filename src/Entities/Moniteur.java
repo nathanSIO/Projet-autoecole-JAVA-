@@ -13,7 +13,7 @@ import java.util.Date;
 public class Moniteur {
     private int CodeMoniteur;
     private String nom,prenom;
-    private int sexe;
+    private int sexe,nbrLecons;
     private Date DateDeNaissance;
     private String Adresse,CodePostal,Ville,Telephone;
     
@@ -28,7 +28,20 @@ public class Moniteur {
         this.Ville=uneVille;
         this.Telephone=unTelephone;
     }
+      public Moniteur (int CodeMoniteur,int nbrLecons,String nom,String Prenom,int unSexe,Date uneDateDeNaissance,String uneAdresse,String unCodePostal,String uneVille,String unTelephone){
+        this.CodeMoniteur=CodeMoniteur;
+        this.nom=nom;
+        this.prenom=Prenom;
+        this.sexe=unSexe;
+        this.DateDeNaissance=uneDateDeNaissance;
+        this.Adresse=uneAdresse;
+        this.CodePostal=unCodePostal;
+        this.Ville=uneVille;
+        this.Telephone=unTelephone;
+        this.nbrLecons = nbrLecons;
+    }
 
+      
     /**
      * @return the CodeMoniteur
      */
@@ -90,5 +103,8 @@ public class Moniteur {
      */
     public String getTelephone() {
         return Telephone;
+    }
+    public int getNbrLecons(){
+        return nbrLecons;
     }
 }

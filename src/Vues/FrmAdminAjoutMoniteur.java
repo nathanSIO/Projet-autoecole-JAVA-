@@ -4,7 +4,7 @@
  */
 package Vues;
 
-import Controlers.CtrlEleve;
+import Controlers.CtrlMoniteur;
 import javax.swing.JOptionPane;
 
 /**
@@ -13,6 +13,7 @@ import javax.swing.JOptionPane;
  */
 public class FrmAdminAjoutMoniteur extends javax.swing.JFrame {
 
+    CtrlMoniteur ctrlMoniteur;
     /**
      * Creates new form FrmEleveInscription
      */
@@ -226,11 +227,14 @@ public class FrmAdminAjoutMoniteur extends javax.swing.JFrame {
         }
         else if(txtAjoutMoniteurMdp.getText().equals("")){
             JOptionPane.showMessageDialog(this, "Veuillez Saisir un mdp","Choix du mdp",JOptionPane.WARNING_MESSAGE);
+        } else {
+            ctrlMoniteur.addMoniteur(txtAjoutMoniteurNom.getText(), txtAjoutMoniteurPrenom.getText(), cboAjoutMoniteurSexe.getSelectedIndex(), dcAjoutMoniteurDateDeNaiss.getDate(), txtAjoutMoniteurInfoRue.getText(), Integer.parseInt(txtAjoutMoniteurCodePostale.getText()), txtAjoutMoniteurVille.getText(), txtAjoutMoniteurNumeroTelephone.getText(), txtAjoutMoniteurLogin.getText(), txtAjoutMoniteurMdp.getText());
+            JOptionPane.showMessageDialog(this, "Le moniteur a été ajouté");
         }
     }//GEN-LAST:event_btnAjoutMoniteurMouseClicked
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-        // TODO add your handling code here:
+        ctrlMoniteur = new CtrlMoniteur();
     }//GEN-LAST:event_formWindowOpened
 
     /**

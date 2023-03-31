@@ -52,13 +52,13 @@ public class CtrlGraphique {
     
     public HashMap<String, Double> GetDatasGraphiqueEleveLecon(int numEleve)
     {
-       HashMap<String, Double> datas = new HashMap();
+        HashMap<String, Double> datas = new HashMap();
         try {
             ps = cnx.prepareStatement("SELECT MONTH(Date) AS mois, COUNT(CodeLecon) AS eleveLecon \n" +
                                       "FROM lecon \n" +
                                       "JOIN vehicule ON vehicule.Immatriculation = lecon.Immatriculation\n" +
                                       "JOIN categorie ON categorie.CodeCategorie = vehicule.CodeCategorie\n" +
-                                      "WHERE CodeEleve = ? GROUP BY  mois ORDER BY  mois");
+                                      "WHERE CodeEleve = ? GROUP BY  mois");
             ps.setInt(1, numEleve);
             rs = ps.executeQuery();
             while(rs.next())

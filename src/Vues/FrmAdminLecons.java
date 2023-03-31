@@ -5,9 +5,7 @@
 package Vues;
 
 import Controlers.CtrlLecon;
-import Entities.Lecon;
 import Tools.ModelJTable;
-import java.util.ArrayList;
 
 /**
  *

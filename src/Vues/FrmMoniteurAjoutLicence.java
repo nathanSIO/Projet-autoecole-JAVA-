@@ -118,7 +118,7 @@ public class FrmMoniteurAjoutLicence extends javax.swing.JFrame {
         ctrlCategorie = new CtrlCategorie();
         ctrlMoniteur = new CtrlMoniteur();
         
-        for (Categorie cat : ctrlCategorie.getAllCategorie()){
+        for (Categorie cat : ctrlCategorie.getCategorieNotMoniteur(unMoniteur.getCodeMoniteur())){
             cboMoniteurCategoriePermis.addItem(cat.getLibelle());
         }
     }//GEN-LAST:event_formWindowOpened

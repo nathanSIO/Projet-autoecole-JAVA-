@@ -7,7 +7,6 @@ package Vues;
 import Controlers.CtrlLecon;
 import Controlers.CtrlMoniteur;
 import Tools.ModelJTable;
-import static Vues.FrmElevePlanning.eleve;
 
 /**
  *

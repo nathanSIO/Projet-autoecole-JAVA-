@@ -70,7 +70,7 @@ public class FrmMoniteurCAetLecon extends javax.swing.JFrame {
 
         lblAu.setText("Au");
 
-        btnVoirChiffreDAffaire.setText("Voir le chiffre d'affaire");
+        btnVoirChiffreDAffaire.setText("Voir le chiffre d'affaires");
         btnVoirChiffreDAffaire.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnVoirChiffreDAffaireMouseClicked(evt);

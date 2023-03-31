@@ -261,6 +261,7 @@ public class FrmEleveInscriptionLecon extends javax.swing.JFrame {
             if("Oui".equals(cboPayee.getSelectedItem().toString())){
                 reglee=1;
             }
+            // Verifie si l'élève a déjà pris une lecçon le même jour pour le même moniteur et le même type de permis
             if(ctrlLecon.verifInscripLecon(ctrlMoniteur.getIdMoniteurByName(cboEleveInscriptionLeconMoniteur.getSelectedItem().toString()),eleve.getNumEleve(), dateLecon,ctrlVehicule.getCodeCateByModele(cboEleveInscriptionLeconVehicule.getSelectedItem().toString())) != null){
                  JOptionPane.showMessageDialog(this, "Vous êtes déjà inscrit avec ce moniteur le même jour et pour le même type de permis","Dejà inscrit",JOptionPane.WARNING_MESSAGE);
             }

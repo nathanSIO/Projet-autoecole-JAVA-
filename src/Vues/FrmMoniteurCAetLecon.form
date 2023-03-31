@@ -140,7 +140,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnVoirChiffreDAffaire">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Voir le chiffre d&apos;affaire"/>
+        <Property name="text" type="java.lang.String" value="Voir le chiffre d&apos;affaires"/>
       </Properties>
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnVoirChiffreDAffaireMouseClicked"/>

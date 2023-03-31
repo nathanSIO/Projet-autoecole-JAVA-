@@ -10,6 +10,7 @@ import Controlers.CtrlMoniteur;
 import Entities.Eleve;
 import Entities.Lecon;
 import Entities.Moniteur;
+import Entities.Vehicule;
 import java.util.ArrayList;
 import javax.swing.table.AbstractTableModel;
 
@@ -83,20 +84,21 @@ public class ModelJTable extends AbstractTableModel
     }
      public void loadDatasAllEleve (ArrayList<Eleve> lesEleves)
      {
-        colonnes = new String[]{"CodeEleve","nom","prenom","Sexe","DateDeNaissance","Adresse","CodePostal","Ville","Telephone"};
-        lignes = new Object [lesEleves.size()][9];
+        colonnes = new String[]{"CodeEleve","nom","prenom","Sexe","DateDeNaissance"};
+        lignes = new Object [lesEleves.size()][5];
         int i =0;
         for (Eleve unEleve : lesEleves)
         {
             lignes[i][0]= unEleve.getNumEleve();
             lignes[i][1]= unEleve.getNom();
             lignes[i][2]= unEleve.getPrenom();
-            lignes[i][3]= unEleve.getSexe();
+            if (unEleve.getSexe() == 0 ){
+                 lignes[i][3]= "Homme";
+            }
+            else {
+                 lignes[i][3]= "Femme";
+            }
             lignes[i][4]= unEleve.getDateDeNaissance();
-            lignes[i][5]= unEleve.getAdresse1();
-            lignes[i][6]= unEleve.getCodePostal();
-            lignes[i][7]= unEleve.getVille();
-            lignes[i][8]= unEleve.getTelephone();
             i++;
         }
         fireTableDataChanged();
@@ -104,23 +106,87 @@ public class ModelJTable extends AbstractTableModel
      
      public void loadDatasAllMoniteur (ArrayList<Moniteur> lesMoniteurs)
      {
-        colonnes = new String[]{"CodeMoniteur","nom","prenom","Sexe","DateDeNaissance","Adresse","CodePostal","Ville","Telephone"};
-        lignes = new Object [lesMoniteurs.size()][9];
+        colonnes = new String[]{"CodeMoniteur","nom","prenom","Sexe","DateDeNaissance"};
+        lignes = new Object [lesMoniteurs.size()][5];
         int i =0;
         for (Moniteur unMoniteur : lesMoniteurs)
         {
             lignes[i][0]= unMoniteur.getCodeMoniteur();
             lignes[i][1]= unMoniteur.getNom();
             lignes[i][2]= unMoniteur.getPrenom();
-            lignes[i][3]= unMoniteur.getSexe();
+            if(unMoniteur.getSexe()== 0){
+                lignes[i][3]= "Homme";
+            }
+            else{
+                lignes[i][3]= "Femme";
+            }
             lignes[i][4]= unMoniteur.getDateDeNaissance();
-            lignes[i][5]= unMoniteur.getAdresse();
-            lignes[i][6]= unMoniteur.getCodePostal();
-            lignes[i][7]= unMoniteur.getVille();
-            lignes[i][8]= unMoniteur.getTelephone();
             i++;
         }
         fireTableDataChanged();
      }
-
+       public void loadDatasMoniteurLePlusSollicite(Moniteur leMoniteurSolicite){
+        colonnes = new String[]{"CodeMoniteur","Nombre de Leçons","nom","prenom","Sexe","DateDeNaissance"};
+        lignes = new Object [1][6];
+        int i =0;
+            lignes[i][0]= leMoniteurSolicite.getCodeMoniteur();
+            lignes[i][1]= leMoniteurSolicite.getNbrLecons();
+            lignes[i][2]= leMoniteurSolicite.getNom();
+            lignes[i][3]= leMoniteurSolicite.getPrenom();
+            if (leMoniteurSolicite.getSexe()== 0){
+                lignes[i][4]= "Homme";
+            }
+            else{
+                lignes[i][4]= "Femme";
+            }
+            lignes[i][5]= leMoniteurSolicite.getDateDeNaissance();
+            i++;
+        fireTableDataChanged();
+     }
+      public void loadDatasLesMoniteursLePlusSollicites(ArrayList<Moniteur> lesMoniteursSollicites){
+        colonnes = new String[]{"CodeMoniteur","Nombre de Leçons","nom","prenom","Sexe","DateDeNaissance"};
+        lignes = new Object [lesMoniteursSollicites.size()][6];
+        int i =0;
+        for(Moniteur lesMoniteurs : lesMoniteursSollicites){
+            lignes[i][0]= lesMoniteurs.getCodeMoniteur();
+            lignes[i][1]= lesMoniteurs.getNbrLecons();
+            lignes[i][2]= lesMoniteurs.getNom();
+            lignes[i][3]= lesMoniteurs.getPrenom();
+            if (lesMoniteurs.getSexe()== 0){
+                lignes[i][4]= "Homme";
+            }
+            else{
+                lignes[i][4]= "Femme";
+            }
+            lignes[i][5]= lesMoniteurs.getDateDeNaissance();
+            i++;
+        }
+        fireTableDataChanged();
+     }
+      public void loadDatasVehiculeLePlusSollicite(Vehicule vehiculeLePlusSollicite){
+          colonnes = new String[]{"Immatriculation","Nombre de Leçons","Marque","Modele","Annee","Categorie"};
+          lignes = new Object [1][10];
+          int i =0;
+            lignes[i][0]= vehiculeLePlusSollicite.getImmatriculation();
+            lignes[i][1]= vehiculeLePlusSollicite.getnbrLecons();
+            lignes[i][2]= vehiculeLePlusSollicite.getMarque();
+            lignes[i][3]= vehiculeLePlusSollicite.getModele();
+            lignes[i][4]= vehiculeLePlusSollicite.getAnnee();
+            lignes[i][5]= vehiculeLePlusSollicite.getCodeCategorie();
+      }
+         public void loadDatasLesVehiculeLesPlusSollicites(ArrayList<Vehicule> lesVehiculesSolicites){
+          colonnes = new String[]{"Immatriculation","Nombre de Leçons","Marque","Modele","Annee","Categorie"};
+          lignes = new Object [lesVehiculesSolicites.size()][6];
+          int i =0;
+          for(Vehicule leVehiculeLePlusSollicite : lesVehiculesSolicites){
+            lignes[i][0]= leVehiculeLePlusSollicite.getImmatriculation();
+            lignes[i][1]= leVehiculeLePlusSollicite.getnbrLecons();
+            lignes[i][2]= leVehiculeLePlusSollicite.getMarque();
+            lignes[i][3]= leVehiculeLePlusSollicite.getModele();
+            lignes[i][4]= leVehiculeLePlusSollicite.getAnnee();
+            lignes[i][5]= leVehiculeLePlusSollicite.getCodeCategorie();
+            i++;
+      }
+          fireTableDataChanged();
+}
 }

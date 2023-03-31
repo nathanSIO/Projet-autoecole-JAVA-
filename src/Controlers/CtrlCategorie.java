@@ -125,4 +125,23 @@ public class CtrlCategorie {
         }
         
     }
+      public ArrayList<Categorie> getCategorieNotMoniteur(int codeMoniteur){ // Fonction qui renvoie les catégories où le moniteur n'a pas de licence
+        ArrayList<Categorie> lesCategories = new ArrayList<>();
+        try {
+            ps=maCnx.prepareStatement("SELECT DISTINCT(categorie.CodeCategorie), libelle, prix\n" +
+                                      "from categorie\n" +
+                                      "WHERE categorie.CodeCategorie NOT IN ( SELECT CodeCategorie \n" +
+                                      "from licence\n" +
+                                      "WHERE codeMoniteur = ?);");
+            ps.setInt(1, codeMoniteur);
+            rs=ps.executeQuery();
+            while(rs.next()){
+                Categorie uneCategorie= new Categorie(rs.getInt(1), rs.getString(2), rs.getDouble(3));
+                lesCategories.add(uneCategorie);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(CtrlCategorie.class.getName()).log(Level.SEVERE, null, ex);
+        }
+         return lesCategories;
+    }
 }
