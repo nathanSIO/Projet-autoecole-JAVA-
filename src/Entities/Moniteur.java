@@ -15,8 +15,20 @@ public class Moniteur {
     private String nom,prenom;
     private int sexe,nbrLecons;
     private Date DateDeNaissance;
-    private String Adresse,CodePostal,Ville,Telephone;
+    private String Adresse,CodePostal,Ville,Telephone,mdp;
     
+    public Moniteur (int CodeMoniteur,String nom,String Prenom,int unSexe,Date uneDateDeNaissance,String uneAdresse,String unCodePostal,String uneVille,String unTelephone, String unMdp){
+        this.CodeMoniteur=CodeMoniteur;
+        this.nom=nom;
+        this.prenom=Prenom;
+        this.sexe=unSexe;
+        this.DateDeNaissance=uneDateDeNaissance;
+        this.Adresse=uneAdresse;
+        this.CodePostal=unCodePostal;
+        this.Ville=uneVille;
+        this.Telephone=unTelephone;
+        this.mdp=unMdp;
+    }
     public Moniteur (int CodeMoniteur,String nom,String Prenom,int unSexe,Date uneDateDeNaissance,String uneAdresse,String unCodePostal,String uneVille,String unTelephone){
         this.CodeMoniteur=CodeMoniteur;
         this.nom=nom;

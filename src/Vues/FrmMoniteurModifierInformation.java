@@ -6,7 +6,10 @@ package Vues;
 
 import Controlers.CtrlMoniteur;
 import Entities.Moniteur;
+import java.security.NoSuchAlgorithmException;
 import java.text.SimpleDateFormat;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -55,6 +58,10 @@ public class FrmMoniteurModifierInformation extends javax.swing.JFrame {
         lblMoniteurModifDateDeNaissance = new javax.swing.JLabel();
         txtMoniteurModifCodePostale = new javax.swing.JTextField();
         lblMoniteurModifAdresse = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        txtMdp = new javax.swing.JPasswordField();
+        txtMdpConfirm = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -92,6 +99,10 @@ public class FrmMoniteurModifierInformation extends javax.swing.JFrame {
 
         lblMoniteurModifAdresse.setText("Adresse :");
 
+        jLabel1.setText("mdp1");
+
+        jLabel2.setText("mdp2");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -99,7 +110,7 @@ public class FrmMoniteurModifierInformation extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGap(0, 63, Short.MAX_VALUE)
                         .addComponent(lblMoniteurModifTitre))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -110,13 +121,17 @@ public class FrmMoniteurModifierInformation extends javax.swing.JFrame {
                                     .addComponent(lblMoniteurModifDateDeNaissance, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(lblMoniteurModifAdresse, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(lblMoniteurModifNumeroTelephone, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lblMoniteurModifPrenom)))
+                                    .addComponent(lblMoniteurModifPrenom)
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(53, 53, 53)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(lblMoniteurModifRue, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(lblMoniteurModifVille, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lblMoniteurModifCodePostale, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(lblMoniteurModifCodePostale, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(txtMoniteurModifNom)
@@ -125,7 +140,9 @@ public class FrmMoniteurModifierInformation extends javax.swing.JFrame {
                             .addComponent(txtMoniteurModifCodePostale)
                             .addComponent(txtMoniteurModifVille)
                             .addComponent(txtMoniteurModifNumeroTelephone)
-                            .addComponent(dcMoniteurModifDateNaissance, javax.swing.GroupLayout.DEFAULT_SIZE, 163, Short.MAX_VALUE))))
+                            .addComponent(dcMoniteurModifDateNaissance, javax.swing.GroupLayout.DEFAULT_SIZE, 163, Short.MAX_VALUE)
+                            .addComponent(txtMdp)
+                            .addComponent(txtMdpConfirm))))
                 .addGap(31, 31, 31))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
@@ -168,7 +185,15 @@ public class FrmMoniteurModifierInformation extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblMoniteurModifNumeroTelephone)
                     .addComponent(txtMoniteurModifNumeroTelephone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(txtMdp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(txtMdpConfirm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
                 .addComponent(btnMoniteurModifInformations)
                 .addGap(21, 21, 21))
         );
@@ -201,15 +226,31 @@ public class FrmMoniteurModifierInformation extends javax.swing.JFrame {
         else if(txtMoniteurModifNumeroTelephone.getText().equals("")){
             JOptionPane.showMessageDialog(this, "Veuillez Saisir un numéro de téléphone","Choix du numéro",JOptionPane.WARNING_MESSAGE);
         }
+        else if(txtMdp.getText().equals("")){
+            JOptionPane.showMessageDialog(this, "Veuillez Saisir un mot de passe","Choix du mot de passe",JOptionPane.WARNING_MESSAGE);
+        }
+        else if(txtMdpConfirm.getText().equals("")){
+            JOptionPane.showMessageDialog(this, "Veuillez confirmer votre mot de passe","Confirmer le mot de passe",JOptionPane.WARNING_MESSAGE);
+        }
         else {
           SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
           String dateNaiss = sdf.format(dcMoniteurModifDateNaissance.getDate());
           
-          ctrlMoniteur.modifierMoniteur(unMoniteur.getCodeMoniteur(),txtMoniteurModifNom.getText(), txtMoniteurModifPrenom.getText(), dateNaiss, txtMoniteurModifInfoRue.getText(), Integer.parseInt(txtMoniteurModifCodePostale.getText()) , txtMoniteurModifVille.getText(), txtMoniteurModifNumeroTelephone.getText());
-          JOptionPane.showMessageDialog(this, "Votre modification est faite");
-          unMoniteur = ctrlMoniteur.getMoniteurById(unMoniteur.getCodeMoniteur());
-          FrmMoniteurAcceuil frm = new FrmMoniteurAcceuil(unMoniteur);
           
+          if  (txtMdp.getText().equals(txtMdpConfirm.getText())){
+              try {
+                  
+                  ctrlMoniteur.modifierMoniteur(unMoniteur.getCodeMoniteur(),txtMoniteurModifNom.getText(), txtMoniteurModifPrenom.getText(), dateNaiss, txtMoniteurModifInfoRue.getText(), Integer.parseInt(txtMoniteurModifCodePostale.getText()) , txtMoniteurModifVille.getText(), txtMoniteurModifNumeroTelephone.getText(),ctrlMoniteur.md5(txtMdpConfirm.getText()));
+              } catch (NoSuchAlgorithmException ex) {
+                  Logger.getLogger(FrmMoniteurModifierInformation.class.getName()).log(Level.SEVERE, null, ex);
+              }
+            JOptionPane.showMessageDialog(this, "Votre modification est faite");
+            unMoniteur = ctrlMoniteur.getMoniteurById(unMoniteur.getCodeMoniteur());
+            FrmMoniteurAcceuil frm = new FrmMoniteurAcceuil(unMoniteur);
+          }
+          else{
+            JOptionPane.showMessageDialog(this, "Votre mot de passe n'est pas identique");
+          }
         }
     }//GEN-LAST:event_btnMoniteurModifInformationsMouseClicked
 
@@ -270,6 +311,8 @@ public class FrmMoniteurModifierInformation extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnMoniteurModifInformations;
     private com.toedter.calendar.JDateChooser dcMoniteurModifDateNaissance;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lblMoniteurModifAdresse;
     private javax.swing.JLabel lblMoniteurModifCodePostale;
     private javax.swing.JLabel lblMoniteurModifDateDeNaissance;
@@ -279,6 +322,8 @@ public class FrmMoniteurModifierInformation extends javax.swing.JFrame {
     private javax.swing.JLabel lblMoniteurModifRue;
     private javax.swing.JLabel lblMoniteurModifTitre;
     private javax.swing.JLabel lblMoniteurModifVille;
+    private javax.swing.JPasswordField txtMdp;
+    private javax.swing.JPasswordField txtMdpConfirm;
     private javax.swing.JTextField txtMoniteurModifCodePostale;
     private javax.swing.JTextField txtMoniteurModifInfoRue;
     private javax.swing.JTextField txtMoniteurModifNom;

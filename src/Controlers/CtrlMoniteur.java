@@ -6,6 +6,9 @@ package Controlers;
 
 import Entities.Moniteur;
 import Tools.ConnexionBDD;
+import java.math.BigInteger;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -120,9 +123,9 @@ public class CtrlMoniteur {
     return derNumLicence;
     }
     
-       public void modifierMoniteur(int numMoniteur,String nom,String prenom,String dateDeNaiss,String Adresse,int CodePostal,String Ville,String Telephone){
+       public void modifierMoniteur(int numMoniteur,String nom,String prenom,String dateDeNaiss,String Adresse,int CodePostal,String Ville,String Telephone, String mdp){
     try{
-        ps=cnx.prepareStatement("UPDATE moniteur set nom = ?, prenom=?,dateDeNaissance= ?, Adresse = ?,CodePostal=?,Ville=?,telephone=? where codeMoniteur= ?");
+        ps=cnx.prepareStatement("UPDATE moniteur set nom = ?, prenom=?,dateDeNaissance= ?, Adresse = ?,CodePostal=?,Ville=?,telephone=?,password=? where codeMoniteur= ?");
             ps.setString(1, nom);
             ps.setString(2, prenom);
             ps.setString(3, dateDeNaiss);
@@ -130,7 +133,8 @@ public class CtrlMoniteur {
             ps.setInt(5, CodePostal);
             ps.setString(6, Ville);
             ps.setString(7, Telephone);
-            ps.setInt(8, numMoniteur);
+            ps.setString(8, mdp);
+            ps.setInt(9, numMoniteur);
             ps.executeUpdate();
             ps.close();
     } catch (SQLException ex) {
@@ -295,5 +299,11 @@ public class CtrlMoniteur {
         }
     return moiMoniteur;
    }
+   public String md5(String message) throws NoSuchAlgorithmException {
+        MessageDigest md = MessageDigest.getInstance("MD5");
+        byte[] messageDigest = md.digest(message.getBytes());
+        BigInteger bigInt = new BigInteger(1, messageDigest);
+        return bigInt.toString(16);
+    }
     
 }

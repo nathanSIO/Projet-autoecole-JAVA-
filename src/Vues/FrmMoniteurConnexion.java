@@ -7,6 +7,9 @@ package Vues;
 import Controlers.CtrlMoniteur;
 import Entities.Moniteur;
 import Tools.ConnexionBDD;
+import java.security.NoSuchAlgorithmException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -150,15 +153,22 @@ public class FrmMoniteurConnexion extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Veuillez Saisir un un mot de passe","Choix du MDP",JOptionPane.WARNING_MESSAGE);
         }
         else {
-            Moniteur unMoniteur = ctrlMoniteur.verifMoniteur(txtMoniteurIdentifiant.getText(), pfMoniteurMotDePasse.getText());
-            if(unMoniteur==null){
+            Moniteur unMoniteur;
+            try {
+                unMoniteur = ctrlMoniteur.verifMoniteur(txtMoniteurIdentifiant.getText(), ctrlMoniteur.md5(pfMoniteurMotDePasse.getText()));
+                if(unMoniteur==null){
+                    unMoniteur = ctrlMoniteur.verifMoniteur(txtMoniteurIdentifiant.getText(), pfMoniteurMotDePasse.getText());
+                }
+                if(unMoniteur==null){
+                    JOptionPane.showMessageDialog(null, "Veuillez Saisir des identifiants correctes","Login incorrect",JOptionPane.WARNING_MESSAGE);
+                }
                 
-                JOptionPane.showMessageDialog(null, "Veuillez Saisir des identifiants correctes","Login incorrect",JOptionPane.WARNING_MESSAGE);
-            }
-            else{
-                FrmMoniteurAcceuil frm= new FrmMoniteurAcceuil(unMoniteur);
-                frm.setVisible(true);
-                
+                else{
+                    FrmMoniteurAcceuil frm= new FrmMoniteurAcceuil(unMoniteur);
+                    frm.setVisible(true);
+                }
+            } catch (NoSuchAlgorithmException ex) {
+                Logger.getLogger(FrmMoniteurConnexion.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }//GEN-LAST:event_btnMoniteurConnexionMouseClicked
